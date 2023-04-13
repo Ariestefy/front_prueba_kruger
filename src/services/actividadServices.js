@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const ACTIVIDAD_API_BASE_URL = "http://localhost:8080/api/v1/ACTIVIDAD";
 
-class ActividadService {
+class actividadServices {
 
     getActividades(){
         return axios.get(ACTIVIDAD_API_BASE_URL);
@@ -23,6 +23,7 @@ class ActividadService {
     deleteActividad(actividadId){
         return axios.delete(ACTIVIDAD_API_BASE_URL + '/' + actividadId);
     }
+
 }
 
-export default new ActividadService()
+export default new actividadServices()
